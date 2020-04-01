@@ -59,6 +59,23 @@ extension View {
         }
     }
     
+    /// `layout(using:)`中已设置的约束列表
+    ///
+    /// example:
+    ///
+    ///     label.layout {
+    ///         $0.centerXAnchor.equal(to: view.centerXAnchor)
+    ///         $0.centerYAnchor.equal(to: view.centerYAnchor)
+    ///     }
+    ///
+    /// 获取已设置的约束并更新
+    ///
+    ///     label.layoutConstraints[0].constant = 100
+    ///
+    public var layoutConstraints: [NSLayoutConstraint] {
+        return layoutProxy.constraints
+    }
+    
     /// 构建约束，该方法会删除旧的约束
     ///
     /// example:

@@ -77,18 +77,10 @@ class AnimationViewController: UIViewController {
         } else {
             redViewLeadingOffset = 30
         }
-        resetLayout()
+        redView.layoutConstraints[1].constant = redViewLeadingOffset
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
     }
     
-    func resetLayout() {
-        redView.layout {
-            $0.topAnchor == view.safeAreaLayoutGuide.topAnchor + 30
-            $0.leadingAnchor == view.leadingAnchor + redViewLeadingOffset
-            $0.heightAnchor == view.heightAnchor * 0.5 + 30
-        }
-    }
-
 }

@@ -31,4 +31,7 @@ blueView.layout {
     $0.heightAnchor == redView.heightAnchor * 0.5 + 30
 }
 ```
-
+Update Constraints:
+```
+redView.layoutConstraints[1].constant = redViewLeadingOffset
+```
