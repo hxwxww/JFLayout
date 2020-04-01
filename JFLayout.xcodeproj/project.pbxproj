@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		AA3361972433501C00DB90D5 /* JFLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3361952433501C00DB90D5 /* JFLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA3361A1243350C000DB90D5 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33619D243350C000DB90D5 /* LayoutAnchor.swift */; };
-		AA3361A2243350C000DB90D5 /* LayoutOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33619E243350C000DB90D5 /* LayoutOperators.swift */; };
-		AA3361A3243350C000DB90D5 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33619F243350C000DB90D5 /* LayoutProxy.swift */; };
-		AA3361A4243350C000DB90D5 /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3361A0243350C000DB90D5 /* LayoutProperty.swift */; };
+		AADED605243379FB008651C8 /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADED601243379FB008651C8 /* LayoutProperty.swift */; };
+		AADED606243379FB008651C8 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADED602243379FB008651C8 /* LayoutAnchor.swift */; };
+		AADED607243379FB008651C8 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADED603243379FB008651C8 /* LayoutProxy.swift */; };
+		AADED608243379FB008651C8 /* LayoutOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADED604243379FB008651C8 /* LayoutOperators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA3361922433501C00DB90D5 /* JFLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JFLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3361952433501C00DB90D5 /* JFLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFLayout.h; sourceTree = "<group>"; };
 		AA3361962433501C00DB90D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA33619D243350C000DB90D5 /* LayoutAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = Sources/LayoutAnchor.swift; sourceTree = SOURCE_ROOT; };
-		AA33619E243350C000DB90D5 /* LayoutOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutOperators.swift; path = Sources/LayoutOperators.swift; sourceTree = SOURCE_ROOT; };
-		AA33619F243350C000DB90D5 /* LayoutProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Sources/LayoutProxy.swift; sourceTree = SOURCE_ROOT; };
-		AA3361A0243350C000DB90D5 /* LayoutProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutProperty.swift; path = Sources/LayoutProperty.swift; sourceTree = SOURCE_ROOT; };
+		AADED601243379FB008651C8 /* LayoutProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutProperty.swift; sourceTree = "<group>"; };
+		AADED602243379FB008651C8 /* LayoutAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutAnchor.swift; sourceTree = "<group>"; };
+		AADED603243379FB008651C8 /* LayoutProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutProxy.swift; sourceTree = "<group>"; };
+		AADED604243379FB008651C8 /* LayoutOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutOperators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,14 +55,22 @@
 			isa = PBXGroup;
 			children = (
 				AA3361952433501C00DB90D5 /* JFLayout.h */,
-				AA33619D243350C000DB90D5 /* LayoutAnchor.swift */,
-				AA33619E243350C000DB90D5 /* LayoutOperators.swift */,
-				AA3361A0243350C000DB90D5 /* LayoutProperty.swift */,
-				AA33619F243350C000DB90D5 /* LayoutProxy.swift */,
+				AADED600243379FB008651C8 /* Sources */,
 				AA3361962433501C00DB90D5 /* Info.plist */,
 			);
 			path = JFLayout;
 			sourceTree = "<group>";
+		};
+		AADED600243379FB008651C8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AADED601243379FB008651C8 /* LayoutProperty.swift */,
+				AADED602243379FB008651C8 /* LayoutAnchor.swift */,
+				AADED603243379FB008651C8 /* LayoutProxy.swift */,
+				AADED604243379FB008651C8 /* LayoutOperators.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -144,10 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3361A1243350C000DB90D5 /* LayoutAnchor.swift in Sources */,
-				AA3361A2243350C000DB90D5 /* LayoutOperators.swift in Sources */,
-				AA3361A4243350C000DB90D5 /* LayoutProperty.swift in Sources */,
-				AA3361A3243350C000DB90D5 /* LayoutProxy.swift in Sources */,
+				AADED606243379FB008651C8 /* LayoutAnchor.swift in Sources */,
+				AADED608243379FB008651C8 /* LayoutOperators.swift in Sources */,
+				AADED605243379FB008651C8 /* LayoutProperty.swift in Sources */,
+				AADED607243379FB008651C8 /* LayoutProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
