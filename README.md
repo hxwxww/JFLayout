@@ -1,6 +1,10 @@
 # JFLayout
 A simple way to use Auto Layout
 
+Import:
+```
+pod 'JFLayout'
+```
 Use Functions:
 ```
 redView.layout {
